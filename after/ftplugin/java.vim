@@ -22,3 +22,5 @@ nnoremap ,< ea><ESC>bi<<ESC>i
 
 "convert a variable access to an object getter call.
 nnoremap <leader>jg ea()<ESC>bbgUli.get<ESC>F.i
+" Surround the current visual selection with a try/catch block
+vnoremap <silent> <leader>jt >><ESC>'<Otry {<ESC>'>o} catch () {<CR>}<ESC>k2wa
